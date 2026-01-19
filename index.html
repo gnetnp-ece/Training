@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNDEC-ECE Training Portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .card h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .info-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .info-section h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .info-section ul {
+            list-style-position: inside;
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 GNDEC Training Portal</h1>
+            <p>Training & Placement Cell - B.Tech Training Management System</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-icon">📝</div>
+                <h2>Request Training Permission</h2>
+                <p>Submit your training request to T&P coordinator. Fill in company details and get official permission letter.</p>
+                <a href="https://forms.gle/2vib469YoTinG3NP7" class="btn" target="_blank">Submit Request</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">📄</div>
+                <h2>Submit Confirmation Letter</h2>
+                <p>Once approved by company, upload your training confirmation letter for college records.</p>
+                <a href="YOUR_FORM_2_URL_HERE" class="btn" target="_blank">Upload Confirmation</a>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h3>📋 Process Overview</h3>
+            <ul>
+                <li><strong>Step 1:</strong> Submit training request through Form 1</li>
+                <li><strong>Step 2:</strong> Wait for T&P coordinator approval (check your email)</li>
+                <li><strong>Step 3:</strong> Download the permission letter from email</li>
+                <li><strong>Step 4:</strong> Present letter to company and get confirmation</li>
+                <li><strong>Step 5:</strong> Upload company confirmation through Form 2</li>
+            </ul>
+            
+            <h3 style="margin-top: 25px;">📧 Contact</h3>
+            <ul>
+                <li>Email: tpo@gndec.ac.in</li>
+                <li>Phone: 0161-5064510</li>
+                <li>Cell: 9915794339</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
